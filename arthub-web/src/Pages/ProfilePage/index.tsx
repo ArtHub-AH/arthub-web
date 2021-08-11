@@ -1,9 +1,6 @@
 import React, { FC } from "react";
-import { useHistory, withRouter } from "react-router-dom";
 
 const ProfilePage: FC = () => {
-  const history = useHistory();
-
   // TODO: Fetch artworks from db to map
   const CreateArtWorkViews = () => {
     return (
@@ -49,7 +46,9 @@ const ProfilePage: FC = () => {
     <>
       ProfilePage
       <div>
-        <button onClick={() => history.push("/account")}>Account Logo</button>
+        <button onClick={() => console.log("account logo button clicked.")}>
+          Account Logo
+        </button>
       </div>
       <CreateArtWorkViews />
     </>
