@@ -6,6 +6,9 @@ const Header: FC = () => {
   return (
     <div>
       <a href="/">ARTHUB</a>
+      <button onClick={() => console.log("Message Button clicked")}>
+        Message Icon
+      </button>
       <button onClick={() => history.push("/account")}>Account Icon</button>
     </div>
   );
